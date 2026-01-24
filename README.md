@@ -35,28 +35,3 @@ Plant_Disease_Recognition/
 ├── requirements.txt # Python dependencies
 ├── README.md # This file
 └── .gitignore # Git ignore rules
-
-
-## 🚀 Setup Instructions
-
-### Prerequisites
-- Python 3.8+
-- 4GB+ RAM
-- Standard CPU (no GPU required)
-
-### Installation
-```bash
-# Clone repository
-git clone https://github.com/yourusername/plant-disease-recognition.git
-cd plant-disease-recognition
-
-# Create virtual environment
-python -m venv venv
-
-# Activate (Windows)
-venv\Scripts\activate
-# Activate (Mac/Linux)
-source venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
