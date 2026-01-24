@@ -1,0 +1,149 @@
+================================================================================
+PLANT DISEASE DATASET ANALYSIS REPORT
+================================================================================
+
+Dataset Path: D:\Plant_Disease_Recognition\New Plant Diseases Dataset(Augmented)
+Source: Kaggle - New Plant Diseases Dataset
+URL: https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset
+
+TRAIN SET:
+----------------------------------------
+Total images: 70,295
+Number of classes: 38
+Average images per class: 1850
+
+Class Distribution:
+  Soybean___healthy                       :  2022 (  2.9%)
+  Apple___Apple_scab                      :  2016 (  2.9%)
+  Orange___Haunglongbing_(Citrus_greening):  2010 (  2.9%)
+  Apple___healthy                         :  2008 (  2.9%)
+  Pepper,_bell___healthy                  :  1988 (  2.8%)
+  Apple___Black_rot                       :  1987 (  2.8%)
+  Tomato___Tomato_Yellow_Leaf_Curl_Virus  :  1961 (  2.8%)
+  Potato___Early_blight                   :  1939 (  2.8%)
+  Potato___Late_blight                    :  1939 (  2.8%)
+  Tomato___healthy                        :  1926 (  2.7%)
+  Grape___Esca_(Black_Measles)            :  1920 (  2.7%)
+  Tomato___Early_blight                   :  1920 (  2.7%)
+  Pepper,_bell___Bacterial_spot           :  1913 (  2.7%)
+  Corn_(maize)___Northern_Leaf_Blight     :  1908 (  2.7%)
+  Corn_(maize)___Common_rust_             :  1907 (  2.7%)
+  Grape___Black_rot                       :  1888 (  2.7%)
+  Tomato___Leaf_Mold                      :  1882 (  2.7%)
+  Corn_(maize)___healthy                  :  1859 (  2.6%)
+  Tomato___Late_blight                    :  1851 (  2.6%)
+  Peach___Bacterial_spot                  :  1838 (  2.6%)
+  Tomato___Target_Spot                    :  1827 (  2.6%)
+  Cherry_(including_sour)___healthy       :  1826 (  2.6%)
+  Potato___healthy                        :  1824 (  2.6%)
+  Strawberry___healthy                    :  1824 (  2.6%)
+  Blueberry___healthy                     :  1816 (  2.6%)
+  Tomato___Tomato_mosaic_virus            :  1790 (  2.5%)
+  Raspberry___healthy                     :  1781 (  2.5%)
+  Strawberry___Leaf_scorch                :  1774 (  2.5%)
+  Apple___Cedar_apple_rust                :  1760 (  2.5%)
+  Tomato___Septoria_leaf_spot             :  1745 (  2.5%)
+  Tomato___Spider_mites Two-spotted_spider_mite:  1741 (  2.5%)
+  Squash___Powdery_mildew                 :  1736 (  2.5%)
+  Peach___healthy                         :  1728 (  2.5%)
+  Grape___Leaf_blight_(Isariopsis_Leaf_Spot):  1722 (  2.4%)
+  Tomato___Bacterial_spot                 :  1702 (  2.4%)
+  Grape___healthy                         :  1692 (  2.4%)
+  Cherry_(including_sour)___Powdery_mildew:  1683 (  2.4%)
+  Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot:  1642 (  2.3%)
+
+VALID SET:
+----------------------------------------
+Total images: 17,572
+Number of classes: 38
+Average images per class: 462
+
+Class Distribution:
+  Soybean___healthy                       :   505 (  2.9%)
+  Apple___Apple_scab                      :   504 (  2.9%)
+  Orange___Haunglongbing_(Citrus_greening):   503 (  2.9%)
+  Apple___healthy                         :   502 (  2.9%)
+  Apple___Black_rot                       :   497 (  2.8%)
+  Pepper,_bell___healthy                  :   497 (  2.8%)
+  Tomato___Tomato_Yellow_Leaf_Curl_Virus  :   490 (  2.8%)
+  Potato___Early_blight                   :   485 (  2.8%)
+  Potato___Late_blight                    :   485 (  2.8%)
+  Tomato___healthy                        :   481 (  2.7%)
+  Grape___Esca_(Black_Measles)            :   480 (  2.7%)
+  Tomato___Early_blight                   :   480 (  2.7%)
+  Pepper,_bell___Bacterial_spot           :   478 (  2.7%)
+  Corn_(maize)___Common_rust_             :   477 (  2.7%)
+  Corn_(maize)___Northern_Leaf_Blight     :   477 (  2.7%)
+  Grape___Black_rot                       :   472 (  2.7%)
+  Tomato___Leaf_Mold                      :   470 (  2.7%)
+  Corn_(maize)___healthy                  :   465 (  2.6%)
+  Tomato___Late_blight                    :   463 (  2.6%)
+  Peach___Bacterial_spot                  :   459 (  2.6%)
+  Tomato___Target_Spot                    :   457 (  2.6%)
+  Cherry_(including_sour)___healthy       :   456 (  2.6%)
+  Potato___healthy                        :   456 (  2.6%)
+  Strawberry___healthy                    :   456 (  2.6%)
+  Blueberry___healthy                     :   454 (  2.6%)
+  Tomato___Tomato_mosaic_virus            :   448 (  2.5%)
+  Raspberry___healthy                     :   445 (  2.5%)
+  Strawberry___Leaf_scorch                :   444 (  2.5%)
+  Apple___Cedar_apple_rust                :   440 (  2.5%)
+  Tomato___Septoria_leaf_spot             :   436 (  2.5%)
+  Tomato___Spider_mites Two-spotted_spider_mite:   435 (  2.5%)
+  Squash___Powdery_mildew                 :   434 (  2.5%)
+  Peach___healthy                         :   432 (  2.5%)
+  Grape___Leaf_blight_(Isariopsis_Leaf_Spot):   430 (  2.4%)
+  Tomato___Bacterial_spot                 :   425 (  2.4%)
+  Grape___healthy                         :   423 (  2.4%)
+  Cherry_(including_sour)___Powdery_mildew:   421 (  2.4%)
+  Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot:   410 (  2.3%)
+
+OVERALL SUMMARY:
+----------------------------------------
+Total images in dataset: 87,867
+Total classes: 38
+Train/Validation split: 80.0% / 20.0%
+
+ALL CLASSES (38 total):
+----------------------------------------
+  • Apple - Apple scab
+  • Apple - Black rot
+  • Apple - Cedar apple rust
+  • Apple - healthy
+  • Blueberry - healthy
+  • Cherry (including sour) - Powdery mildew
+  • Cherry (including sour) - healthy
+  • Corn (maize) - Cercospora leaf spot Gray leaf spot
+  • Corn (maize) - Common rust 
+  • Corn (maize) - Northern Leaf Blight
+  • Corn (maize) - healthy
+  • Grape - Black rot
+  • Grape - Esca (Black Measles)
+  • Grape - Leaf blight (Isariopsis Leaf Spot)
+  • Grape - healthy
+  • Orange - Haunglongbing (Citrus greening)
+  • Peach - Bacterial spot
+  • Peach - healthy
+  • Pepper, bell - Bacterial spot
+  • Pepper, bell - healthy
+  • Potato - Early blight
+  • Potato - Late blight
+  • Potato - healthy
+  • Raspberry - healthy
+  • Soybean - healthy
+  • Squash - Powdery mildew
+  • Strawberry - Leaf scorch
+  • Strawberry - healthy
+  • Tomato - Bacterial spot
+  • Tomato - Early blight
+  • Tomato - Late blight
+  • Tomato - Leaf Mold
+  • Tomato - Septoria leaf spot
+  • Tomato - Spider mites Two-spotted spider mite
+  • Tomato - Target Spot
+  • Tomato - Tomato Yellow Leaf Curl Virus
+  • Tomato - Tomato mosaic virus
+  • Tomato - healthy
+
+Plants covered: 14
+Plant species: Apple, Blueberry, Cherry_(including_sour), Corn_(maize), Grape, Orange, Peach, Pepper,_bell, Potato, Raspberry, Soybean, Squash, Strawberry, Tomato
