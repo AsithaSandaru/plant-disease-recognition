@@ -1,0 +1,9 @@
+================================================================================
+THESIS PERFORMANCE REPORT - PLANT DISEASE RECOGNITION
+================================================================================
+
+EXECUTIVE SUMMARY
+----------------------------------------
+Model achieved 83.5% accuracy on validation set
+TensorFlow Lite conversion successful with 100.0% prediction match
+CPU inference time: 2.4 ms (416.1 FPS)
