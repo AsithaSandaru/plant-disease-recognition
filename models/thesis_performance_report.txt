@@ -1,9 +1,51 @@
-================================================================================
-THESIS PERFORMANCE REPORT - PLANT DISEASE RECOGNITION
-================================================================================
+======================================================================
+Performance Report - Plant Disease Recognition
+======================================================================
 
-EXECUTIVE SUMMARY
+Executive Summary
 ----------------------------------------
-Model achieved 83.5% accuracy on validation set
-TensorFlow Lite conversion successful with 100.0% prediction match
-CPU inference time: 2.4 ms (416.1 FPS)
+Model accuracy: 83.5%
+TFLite conversion match: 100.0%
+CPU inference time: 2.3 ms (434.0 FPS)
+Performance rating: Excellent (Real-time capable)
+
+Model Architecture
+----------------------------------------
+Type: Convolutional Neural Network (CNN)
+Input size: 128x128 pixels
+Output classes: 38
+Parameters: 166,502
+
+Performance Metrics
+----------------------------------------
+Validation Accuracy: 0.8350 (83.5%)
+Precision: 0.8553
+Recall: 0.8233
+AUC Score: 0.9788
+Loss: 0.6550
+
+Deployment Performance (CPU)
+----------------------------------------
+Average inference time: 2.30 ms
+Minimum inference time: 0.00 ms
+Maximum inference time: 14.08 ms
+Frames per second: 434.0
+Model size: 0.2 MB
+Keras vs TFLite match: 100.0%
+
+Objectives Achieved
+----------------------------------------
+- Achieved target accuracy (>80%): 83.5%
+- Optimized for CPU deployment: 2.3 ms
+- Created TensorFlow Lite model
+- Maintained accuracy after conversion: 100.0% match
+- Model ready for web application
+
+Files Generated
+----------------------------------------
+1. models/final_model.h5 - Trained model
+2. models/plant_disease_model.tflite - Optimized model
+3. models/training_history.png - Training graphs
+4. models/confusion_matrix_fixed.png - Performance
+5. models/classification_report_fixed.txt - Metrics
+6. models/thesis_performance_report.txt - This report

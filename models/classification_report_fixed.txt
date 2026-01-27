@@ -1,4 +1,4 @@
-COMPLETE CLASSIFICATION REPORT
+Complete Classification Report
 ======================================================================
 
                                           precision    recall  f1-score   support
