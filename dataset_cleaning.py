@@ -174,7 +174,6 @@ class DatasetCleaner:
         """
         Check if filename is a duplicate rotation of an existing file
         """
-        # Base pattern without rotation indicators
         base_patterns = [
             filename.replace('_270deg', '').replace('_180deg', '').replace('_90deg', ''),
             filename.replace('_new30degFlipLR', ''),
@@ -197,27 +196,22 @@ class DatasetCleaner:
             if file_size < 2:  # Less than 2KB probably corrupted
                 return False, f"File too small ({file_size:.1f}KB)"
             
-            # Try to open with PIL
             with Image.open(img_path) as img:
                 img.verify()
             
-            # Try to open with OpenCV
             img_cv = cv2.imread(img_path)
             if img_cv is None:
                 return False, "OpenCV cannot read"
             
-            # Check dimensions
             height, width = img_cv.shape[:2]
             if height < 100 or width < 100:
                 return False, f"Too small ({width}x{height})"
             
-            # Check if image is mostly one color (corrupted)
             if len(img_cv.shape) == 3:
                 std_dev = np.std(img_cv)
                 if std_dev < 5:  # Very low variation
                     return False, f"Low color variation (std={std_dev:.1f})"
             
-            # Check for mostly black or white images
             mean_intensity = np.mean(img_cv)
             if mean_intensity < 10 or mean_intensity > 245:
                 return False, f"Extreme brightness ({mean_intensity:.0f})"
@@ -250,7 +244,6 @@ class DatasetCleaner:
             
             for class_name, stats in sorted(self.stats['class_stats'].items()):
                 removal_rate = (stats['removed'] / stats['original'] * 100) if stats['original'] > 0 else 0
-                # FIX: Use ASCII arrow instead of Unicode
                 f.write(f"{class_name:45s}: {stats['original']:5d} -> {stats['cleaned']:5d} "
                        f"(-{stats['removed']:3d}, {removal_rate:5.1f}% removed)\n")
             
@@ -303,7 +296,6 @@ class DatasetCleaner:
                 print(f"\nWARNING: Significant class imbalance detected!")
                 print("   Consider data augmentation for minority classes.")
             
-            # Show most imbalanced classes
             sorted_classes = sorted(class_counts.items(), key=lambda x: x[1])
             
             print(f"\nTop 5 largest classes:")
@@ -349,22 +341,17 @@ def create_balanced_subset(cleaned_path, output_path="balanced_dataset", min_ima
             output_class_path = os.path.join(output_split_path, class_folder)
             os.makedirs(output_class_path, exist_ok=True)
             
-            # Get all images
             images = [f for f in os.listdir(class_path) 
                      if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
             
-            # Limit to min_images
             if len(images) > min_images:
-                # Use first min_images (they're already shuffled in cleaning)
                 images = images[:min_images]
             
-            # Copy to output
             for img_file in images:
                 src = os.path.join(class_path, img_file)
                 dst = os.path.join(output_class_path, img_file)
                 shutil.copy2(src, dst)
             
-            # Print progress for first few classes
             if len(class_folders) <= 10:
                 print(f"  {class_folder:40s}: {len(images):4d} images")
     
@@ -374,8 +361,6 @@ def create_balanced_subset(cleaned_path, output_path="balanced_dataset", min_ima
     return output_path
 
 def main():
-    # Configuration - USE THE ALREADY CLEANED DATASET
-    # Since cleaning already worked, we'll just analyze and optionally balance
     CLEANED_PATH = "cleaned_dataset"
     BALANCED_PATH = "balanced_dataset"
     
@@ -395,7 +380,6 @@ def main():
     print("ANALYZING CLEANED DATASET")
     print("="*80)
     
-    # Count images in cleaned dataset
     total_train = 0
     total_valid = 0
     
@@ -455,9 +439,7 @@ def main():
     
     if create_balanced:
         print(f"  Balanced subset: {min_images} images per class")
-        total_balanced = 38 * min_images * 2  # 38 classes × min_images × 2 splits
         print(f"  Total in balanced set: ~{total_balanced:,}")
-        print(f"  Size reduction for CPU: {(1 - total_balanced/87687)*100:.1f}%")
     
     print(f"\nNEXT STEPS:")
     print(f"  1. Update 02_preprocessing.py with this dataset path:")
@@ -470,17 +452,6 @@ def main():
         f.write(final_dataset)
     
     print(f"\nDataset path saved to: dataset_path.txt")
-    
-    # Recommendation
-    print("\n" + "="*80)
-    print("RECOMMENDATION FOR YOUR THESIS (CPU FOCUS):")
-    print("="*80)
-    print("Since your goal is CPU deployment, I recommend:")
-    print("1. Use BALANCED dataset (500 images per class)")
-    print("2. This gives you 38,000 total images - manageable for CPU")
-    print("3. Train with image size 128x128 (not 256x256)")
-    print("4. This will be 16x faster than original 256x256 images")
-    print("\nYour cleaned dataset is ready! Proceed to preprocessing.")
 
 if __name__ == "__main__":
     main()
