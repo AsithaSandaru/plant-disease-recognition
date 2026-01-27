@@ -459,8 +459,6 @@ def main():
     print(f"  models/model_summary.txt - Results")
     print(f"  models/classification_report.txt - Performance report")
     
-    print(f"\nNext Step:")
-    print(f"  Run: python 04_model_conversion.py")
 
 if __name__ == "__main__":
     gpus = tf.config.experimental.list_physical_devices('GPU')
