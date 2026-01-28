@@ -1,6 +1,6 @@
 # Plant Disease Recognition - Thesis Project
 
-**Implementation and Performance Evaluation of a Lightweight Image Classification Model for Plant Disease Recognition**
+**Lightweight Image Classification Model for Plant Disease Recognition**
 
 ## Project Overview
 This thesis develops a CPU-optimized deep learning system for recognizing plant diseases from leaf images. The model is trained on 38 disease classes across 14 plant species and deployed as a web application.
