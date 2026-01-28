@@ -6,7 +6,7 @@ Executive Summary
 ----------------------------------------
 Model accuracy: 83.5%
 TFLite conversion match: 100.0%
-CPU inference time: 1.8 ms (555.9 FPS)
+CPU inference time: 1.7 ms (574.8 FPS)
 Performance rating: Excellent (Real-time capable)
 
 Model Architecture
@@ -26,17 +26,17 @@ Loss: 0.6550
 
 Deployment Performance (CPU)
 ----------------------------------------
-Average inference time: 1.80 ms
+Average inference time: 1.74 ms
 Minimum inference time: 0.00 ms
-Maximum inference time: 14.27 ms
-Frames per second: 555.9
+Maximum inference time: 15.93 ms
+Frames per second: 574.8
 Model size: 0.2 MB
 Keras vs TFLite match: 100.0%
 
 Objectives Achieved
 ----------------------------------------
 - Achieved target accuracy (>80%): 83.5%
-- Optimized for CPU deployment: 1.8 ms
+- Optimized for CPU deployment: 1.7 ms
 - Created TensorFlow Lite model
 - Maintained accuracy after conversion: 100.0% match
 - Model ready for web application

@@ -356,11 +356,11 @@ def generate_performance_report(model_path, tflite_path, accuracy, benchmark, ma
         
         f.write("Performance Metrics\n")
         f.write("-"*40 + "\n")
-        f.write(f"Validation Accuracy: {accuracy:.4f} ({accuracy*100:.1f}%)\n")
-        f.write(f"Precision: 0.8553\n")
-        f.write(f"Recall: 0.8233\n")
-        f.write(f"AUC Score: 0.9788\n")
-        f.write(f"Loss: 0.6550\n\n")
+        f.write(f"Validation Accuracy-Validation accuracy shows how good the model is at making prediction on new training data: {accuracy:.4f} ({accuracy*100:.1f}%)\n")
+        f.write(f"Precision-what the model says how much % its correct: 0.8553\n")
+        f.write(f"Recall-How many positive cases model finds: 0.8233\n")
+        f.write(f"AUC Score-how good the model is at telling the difference between classes(separating healthy vs diseased): 0.9788\n")
+        f.write(f"Loss-means the how much % model makes the mistakes: 0.6550\n\n")
         
         f.write("Deployment Performance (CPU)\n")
         f.write("-"*40 + "\n")
