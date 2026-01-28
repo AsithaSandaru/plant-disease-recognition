@@ -327,11 +327,11 @@ def compare_models_accuracy(keras_model_path, tflite_path, test_samples=100):
     
     return match_percentage
 
-def generate_thesis_report(model_path, tflite_path, accuracy, benchmark, match_percentage):
+def generate_performance_report(model_path, tflite_path, accuracy, benchmark, match_percentage):
     """
-    Generate report for thesis
+    Generate report
     """
-    report_file = "models/thesis_performance_report.txt"
+    report_file = "models/performance_report.txt"
     
     model = keras.models.load_model(model_path)
     
@@ -386,9 +386,9 @@ def generate_thesis_report(model_path, tflite_path, accuracy, benchmark, match_p
         f.write("3. models/training_history.png - Training graphs\n")
         f.write("4. models/confusion_matrix_fixed.png - Performance\n")
         f.write("5. models/classification_report_fixed.txt - Metrics\n")
-        f.write("6. models/thesis_performance_report.txt - This report\n")
+        f.write("6. models/performance_report.txt - Performance report\n")
     
-    print(f"\nThesis report saved: {report_file}")
+    print(f"\nPerformance report saved: {report_file}")
 
 def main():
     print("Plant Disease Recognition - Post Training Process")
@@ -449,10 +449,10 @@ def main():
     match_percentage = compare_models_accuracy(model_path, tflite_path, test_samples=50)
     
     print("\n" + "="*70)
-    print("Step 5: Generate Thesis Report")
+    print("Step 5: Generate Performance Report")
     print("="*70)
     
-    generate_thesis_report(model_path, tflite_path, final_accuracy, benchmark, match_percentage)
+    generate_performance_report(model_path, tflite_path, final_accuracy, benchmark, match_percentage)
     
     print("\n" + "="*70)
     print("All Tasks Completed")

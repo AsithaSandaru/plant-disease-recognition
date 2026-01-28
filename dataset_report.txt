@@ -106,44 +106,44 @@ Train/Validation split: 80.0% / 20.0%
 
 ALL CLASSES (38 total):
 ----------------------------------------
-  • Apple - Apple scab
-  • Apple - Black rot
-  • Apple - Cedar apple rust
-  • Apple - healthy
-  • Blueberry - healthy
-  • Cherry (including sour) - Powdery mildew
-  • Cherry (including sour) - healthy
-  • Corn (maize) - Cercospora leaf spot Gray leaf spot
-  • Corn (maize) - Common rust 
-  • Corn (maize) - Northern Leaf Blight
-  • Corn (maize) - healthy
-  • Grape - Black rot
-  • Grape - Esca (Black Measles)
-  • Grape - Leaf blight (Isariopsis Leaf Spot)
-  • Grape - healthy
-  • Orange - Haunglongbing (Citrus greening)
-  • Peach - Bacterial spot
-  • Peach - healthy
-  • Pepper, bell - Bacterial spot
-  • Pepper, bell - healthy
-  • Potato - Early blight
-  • Potato - Late blight
-  • Potato - healthy
-  • Raspberry - healthy
-  • Soybean - healthy
-  • Squash - Powdery mildew
-  • Strawberry - Leaf scorch
-  • Strawberry - healthy
-  • Tomato - Bacterial spot
-  • Tomato - Early blight
-  • Tomato - Late blight
-  • Tomato - Leaf Mold
-  • Tomato - Septoria leaf spot
-  • Tomato - Spider mites Two-spotted spider mite
-  • Tomato - Target Spot
-  • Tomato - Tomato Yellow Leaf Curl Virus
-  • Tomato - Tomato mosaic virus
-  • Tomato - healthy
+  ï¿½ Apple - Apple scab
+  ï¿½ Apple - Black rot
+  ï¿½ Apple - Cedar apple rust
+  ï¿½ Apple - healthy
+  ï¿½ Blueberry - healthy
+  ï¿½ Cherry (including sour) - Powdery mildew
+  ï¿½ Cherry (including sour) - healthy
+  ï¿½ Corn (maize) - Cercospora leaf spot Gray leaf spot
+  ï¿½ Corn (maize) - Common rust 
+  ï¿½ Corn (maize) - Northern Leaf Blight
+  ï¿½ Corn (maize) - healthy
+  ï¿½ Grape - Black rot
+  ï¿½ Grape - Esca (Black Measles)
+  ï¿½ Grape - Leaf blight (Isariopsis Leaf Spot)
+  ï¿½ Grape - healthy
+  ï¿½ Orange - Haunglongbing (Citrus greening)
+  ï¿½ Peach - Bacterial spot
+  ï¿½ Peach - healthy
+  ï¿½ Pepper, bell - Bacterial spot
+  ï¿½ Pepper, bell - healthy
+  ï¿½ Potato - Early blight
+  ï¿½ Potato - Late blight
+  ï¿½ Potato - healthy
+  ï¿½ Raspberry - healthy
+  ï¿½ Soybean - healthy
+  ï¿½ Squash - Powdery mildew
+  ï¿½ Strawberry - Leaf scorch
+  ï¿½ Strawberry - healthy
+  ï¿½ Tomato - Bacterial spot
+  ï¿½ Tomato - Early blight
+  ï¿½ Tomato - Late blight
+  ï¿½ Tomato - Leaf Mold
+  ï¿½ Tomato - Septoria leaf spot
+  ï¿½ Tomato - Spider mites Two-spotted spider mite
+  ï¿½ Tomato - Target Spot
+  ï¿½ Tomato - Tomato Yellow Leaf Curl Virus
+  ï¿½ Tomato - Tomato mosaic virus
+  ï¿½ Tomato - healthy
 
 Plants covered: 14
 Plant species: Apple, Blueberry, Cherry_(including_sour), Corn_(maize), Grape, Orange, Peach, Pepper,_bell, Potato, Raspberry, Soybean, Squash, Strawberry, Tomato
