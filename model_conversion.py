@@ -466,8 +466,8 @@ def main():
     
     print(f"\nOutput Files:")
     print(f"   - models/plant_disease_model.tflite - Ready for web app")
-    print(f"   - models/thesis_performance_report.txt - For thesis")
-    print(f"   - models/confusion_matrix_fixed.png - For presentation")
+    print(f"   - models/performance_report.txt")
+    print(f"   - models/confusion_matrix_fixed.png")
     print(f"   - models/classification_report_fixed.txt - Detailed metrics")
     
 
